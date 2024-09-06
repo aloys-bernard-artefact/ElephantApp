@@ -19,3 +19,8 @@ build_local_api :
 run_local_api_docker : build_local_api
 	@echo "Running local API in Docker"
 	docker run -e PORT=$(PORT) -p 8080:$(PORT) local-api
+
+.PHONY : tests 
+tests : 
+	@echo "Running tests"
+	pytest -v tests

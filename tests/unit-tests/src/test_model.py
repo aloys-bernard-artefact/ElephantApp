@@ -1,4 +1,4 @@
-from src.model import create__preproc_pipe
+from src.modelisation import create__preproc_pipe
 
 
 def create__preproc_pipe():
